@@ -64,6 +64,9 @@ li a {
     width: 100%;
     text-align: center;
     height : 85%;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center;
     transition: background-color 0.4s ease-in-out;
  }
  
