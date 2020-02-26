@@ -36,6 +36,11 @@ footer{
     background: rgb(24, 24, 24);
 }
 
+footer a{
+  text-decoration: underline;
+  color : white;
+}
+
 header{
     text-align: center;
     padding-top : 1%;
