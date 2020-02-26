@@ -17,3 +17,26 @@ function topFunction() {
 }
 
 btn.addEventListener("click",topFunction);
+
+$(document).ready(function(){
+  $('#Jeu1').fadeIn(1400);
+  
+  setTimeout(
+    function() 
+    {
+      $('#Jeu2').fadeIn(1400);
+    }, 350);
+
+    setTimeout(
+      function() 
+      {
+        $('#Jeu3').fadeIn(1400);
+      }, 700);
+
+      setTimeout(
+        function() 
+        {
+          $('#Jeu4').fadeIn(1400);
+        }, 1050);
+
+  });

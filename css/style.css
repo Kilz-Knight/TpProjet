@@ -38,9 +38,14 @@ footer{
 
 header{
     text-align: center;
-    padding-top : 2%;
-    padding-bottom: 2%;
+    padding-top : 1%;
+    padding-bottom: 1%;
     background: rgb(24, 24, 24);
+}
+
+header img{
+  width: 7%;
+  min-width: 70px;
 }
 
 .txtImg{
@@ -54,9 +59,24 @@ header{
 
 
 section .container img:hover{
-    opacity: 0.2;
+    opacity: 0.4;
 }
 
+#Jeu1{
+  display: none;
+}
+
+#Jeu2{
+  display: none;
+}
+
+#Jeu3{
+  display: none;
+}
+
+#Jeu4{
+  display: none;
+}
 
 
 
