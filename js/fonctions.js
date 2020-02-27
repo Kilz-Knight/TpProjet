@@ -3,7 +3,7 @@ window.onscroll = function() {scrollFunction()};
 var btn = document.querySelector("#button");;
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 40) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 30) {
     btn.classList.add('show');
     document.querySelector(".progress-container").style.display = "block";
   } else {

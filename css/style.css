@@ -45,7 +45,7 @@ section .container img{
 footer{
     text-align: center;
     margin-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 3%;
     padding-top: 2%;
     background: rgb(24, 24, 24);
 }
@@ -64,7 +64,13 @@ header{
 
 header img{
   width: 7%;
-  min-width: 70px;
+  min-width: 72px;
+  opacity: 1;
+  transition: opacity .5s ease;
+}
+
+header img:hover{
+    opacity: 0.4;
 }
 
 .txtImg{
@@ -79,6 +85,15 @@ header img{
 
 section .container img:hover{
     opacity: 0.4;
+}
+
+section .container .txtImg h2{
+  color: white;
+  transition: color 0.5s ease;
+}
+
+section .container:hover .txtImg h2{
+  color: #9e6d2e;
 }
 
 #Jeu1{
@@ -126,10 +141,10 @@ section .container img:hover{
   }
   #button:hover {
     cursor: pointer;
-    background-color: #333;
+    background-color: #815d2d;
   }
   #button:active {
-    background-color: #555;
+    background-color: #634722;
   }
   #button.show {
     opacity: 1;
@@ -225,6 +240,10 @@ li a {
     .txtImg{
         font-size: 0.9em;
     }
+
+    footer{
+      padding-bottom: 8%;
+    }
  }
  
  @media all and (max-width: 600px) {
@@ -262,6 +281,10 @@ li a {
 
     .txtImg{
         font-size: 0.85em;
+    }
+
+    footer{
+      padding-bottom: 15%;
     }
    
  }
