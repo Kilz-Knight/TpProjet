@@ -8,6 +8,20 @@ body{
     color : white;
 }
 
+.progress-container {
+  z-index: 5000;
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.progress-bar {
+  height: 3px;
+  background: #9e6d2e;
+  width: 0%;
+}
+
 section{
     display: flex;
     justify-content: space-between;
@@ -38,7 +52,7 @@ footer{
 
 footer a{
   text-decoration: underline;
-  color : white;
+  color : #9e6d2e;
 }
 
 header{
@@ -87,7 +101,7 @@ section .container img:hover{
 
 #button {
     display: inline-block;
-    background-color: rgb(95, 95, 95);
+    background-color: #9e6d2e;
     width: 50px;
     height: 50px;
     text-align: center;
