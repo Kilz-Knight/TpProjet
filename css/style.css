@@ -37,13 +37,13 @@ section {
   0% {
     outline-color: #282828;
   }
-  2% {
+  8% {
     outline-color: #282828;
   }
-  22% {
+  55% {
     outline-color: #ff9900;
   }
-  85% {
+  78% {
     outline-color: #ff9900;
   }
   100% {
@@ -55,13 +55,13 @@ section {
   0% {
     outline-color: #282828;
   }
-  2% {
+  8% {
     outline-color: #282828;
   }
-  22% {
+  55% {
     outline-color: #ff9900;
   }
-  85% {
+  78% {
     outline-color: #ff9900;
   }
   100% {
@@ -70,11 +70,11 @@ section {
 }
 
 .animBorder {
-  outline: 5px solid #282828;
+  outline: 8px solid #282828;
   -webkit-animation-name: animBorder;
           animation-name: animBorder;
-  -webkit-animation-duration: 4.2s;
-          animation-duration: 4.2s;
+  -webkit-animation-duration: 3.2s;
+          animation-duration: 3.2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }

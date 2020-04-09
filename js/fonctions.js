@@ -32,7 +32,7 @@ function highlightElem(){
       function() 
       {
         leJeuSelect.classList.remove("animBorder");
-      }, 4250);
+      }, 3250);
 }
 
 btn.addEventListener("click",topFunction);

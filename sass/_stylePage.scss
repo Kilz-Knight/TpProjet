@@ -30,17 +30,17 @@ section{
 
 @keyframes animBorder {
   0%   {outline-color: rgba(40, 40, 40, 1);}
-  2% {outline-color: rgba(40, 40, 40, 1);}
-  22%  {outline-color: rgba(255, 153, 0, 1.0);}
-  85%  {outline-color: rgba(255, 153, 0, 1.0);}
+  8% {outline-color: rgba(40, 40, 40, 1);}
+  55%  {outline-color: rgba(255, 153, 0, 1.0);}
+  78%  {outline-color: rgba(255, 153, 0, 1.0);}
   100% {outline-color: rgba(40, 40, 40, 1);}
 }
 
 
 .animBorder{
-  outline : 5px solid rgba(40, 40, 40, 1);
+  outline : 8px solid rgba(40, 40, 40, 1);
   animation-name: animBorder;
-  animation-duration: 4.2s;
+  animation-duration: 3.2s;
   animation-iteration-count: infinite;
 }
 
