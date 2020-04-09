@@ -18,7 +18,7 @@ body{
 
 .progress-bar {
   height: 3px;
-  background: $brun;
+  background: $orange;
   width: 0%;
 }
 
@@ -26,6 +26,22 @@ section{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@keyframes animBorder {
+  0%   {outline-color: rgba(40, 40, 40, 1);}
+  2% {outline-color: rgba(40, 40, 40, 1);}
+  22%  {outline-color: rgba(255, 153, 0, 1.0);}
+  85%  {outline-color: rgba(255, 153, 0, 1.0);}
+  100% {outline-color: rgba(40, 40, 40, 1);}
+}
+
+
+.animBorder{
+  outline : 5px solid rgba(40, 40, 40, 1);
+  animation-name: animBorder;
+  animation-duration: 4.2s;
+  animation-iteration-count: infinite;
 }
 
 section .container{
@@ -43,6 +59,7 @@ section .container img{
 }
 
 footer{
+    display: none;
     text-align: center;
     margin-top: 2%;
     padding-bottom: 3%;
@@ -52,7 +69,7 @@ footer{
 
 footer a{
   text-decoration: underline;
-  color : $brun;
+  color : $orange;
 }
 
 header{
@@ -93,7 +110,7 @@ section .container .txtImg h2{
 }
 
 section .container:hover .txtImg h2{
-  color: $brun;
+  color: $orange;
 }
 
 #Jeu1, #Jeu2, #Jeu3, #Jeu4{
@@ -104,7 +121,7 @@ section .container:hover .txtImg h2{
 
 #button {
     display: inline-block;
-    background-color: $brun;
+    background-color: $orange;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -129,10 +146,10 @@ section .container:hover .txtImg h2{
   }
   #button:hover {
     cursor: pointer;
-    background-color: #815d2d;
+    background-color: darken( orange, 12% );
   }
   #button:active {
-    background-color: #634722;
+    background-color: darken( orange, 20% );
   }
   #button.show {
     opacity: 1;

@@ -1,6 +1,8 @@
 window.onscroll = function() {scrollFunction()};
 
-var btn = document.querySelector("#button");;
+var btn = document.querySelector("#button");
+var footer = document.querySelector("footer");
+var navBtn = document.querySelectorAll(".navigation ul li a");
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 30) {
@@ -23,7 +25,21 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+function highlightElem(){
+  var leJeuSelect = document.querySelector(this.getAttribute("href"));
+  leJeuSelect.classList.add("animBorder");
+    setTimeout(
+      function() 
+      {
+        leJeuSelect.classList.remove("animBorder");
+      }, 4250);
+}
+
 btn.addEventListener("click",topFunction);
+
+for (i = 0; i<navBtn.length; i++){
+  navBtn[i].addEventListener("click", highlightElem);
+}
 
 $(document).ready(function(){
   $('#Jeu1').fadeIn(1400);
@@ -38,12 +54,18 @@ $(document).ready(function(){
       function() 
       {
         $('#Jeu3').fadeIn(1400);
-      }, 700);
+      }, 750);
 
       setTimeout(
         function() 
         {
           $('#Jeu4').fadeIn(1400);
-        }, 1050);
+        }, 1150);
+
+        setTimeout(
+          function() 
+          {
+            $('footer').fadeIn(1400);
+          }, 1550);
 
   });
