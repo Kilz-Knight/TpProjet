@@ -47,25 +47,37 @@ $(document).ready(function(){
   setTimeout(
     function() 
     {
-      $('#Jeu2').fadeIn(1400);
+      $('#Jeu5').fadeIn(1400);
     }, 350);
 
     setTimeout(
       function() 
       {
-        $('#Jeu3').fadeIn(1400);
+        $('#Jeu2').fadeIn(1400);
       }, 750);
+
+    setTimeout(
+      function() 
+      {
+        $('#Jeu3').fadeIn(1400);
+      }, 1150);
 
       setTimeout(
         function() 
         {
           $('#Jeu4').fadeIn(1400);
-        }, 1150);
+        }, 1550);
+
+        setTimeout(
+          function() 
+          {
+            $('#Jeu6').fadeIn(1400);
+          }, 1950);
 
         setTimeout(
           function() 
           {
             $('footer').fadeIn(1400);
-          }, 1550);
+          }, 2350);
 
   });

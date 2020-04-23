@@ -152,7 +152,7 @@ section .container:hover .txtImg h2 {
   color: #FF9900;
 }
 
-#Jeu1, #Jeu2, #Jeu3, #Jeu4 {
+#Jeu1, #Jeu2, #Jeu3, #Jeu4, #Jeu5, #Jeu6 {
   display: none;
 }
 
@@ -277,6 +277,9 @@ input[type=text]:focus {
         -ms-flex: 1 1 33.33%;
             flex: 1 1 33.33%;
   }
+  .navigation {
+    margin-bottom: 5%;
+  }
   .navigation .barreRecherche {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 50%;
@@ -314,6 +317,9 @@ input[type=text]:focus {
   .navigation .user {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+  }
+  .navigation {
+    margin-bottom: 2%;
   }
   .navigation .barreRecherche {
     text-align: center;
