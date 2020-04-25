@@ -65,13 +65,13 @@ $(document).ready(function(){
       setTimeout(
         function() 
         {
-          $('#Jeu4').fadeIn(1400);
+          $('#Jeu6').fadeIn(1400);
         }, 1550);
 
         setTimeout(
           function() 
           {
-            $('#Jeu6').fadeIn(1400);
+            $('#Jeu4').fadeIn(1400);
           }, 1950);
 
         setTimeout(
