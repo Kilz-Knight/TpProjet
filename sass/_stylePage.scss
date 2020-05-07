@@ -16,6 +16,10 @@ body{
   top: 0;
 }
 
+nav li a{
+  font-size : 1.1em;
+}
+
 .progress-bar {
   height: 3px;
   background: $orange;
@@ -49,6 +53,13 @@ section .container{
     height: auto;
     margin: 2%;
     background: $grisFonce;
+}
+
+.containerVideo{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
 }
 
 section .container img{
@@ -100,7 +111,7 @@ header img:hover{
 }
 
 
-section .container img:hover{
+section div .container img:hover{
     opacity: 0.4;
 }
 
@@ -113,11 +124,28 @@ section .container:hover .txtImg h2{
   color: $orange;
 }
 
-#Jeu1, #Jeu2, #Jeu3, #Jeu4, #Jeu5, #Jeu6{
+#Jeu1, #Jeu2, #Jeu3, #Jeu4, #Jeu5, #Jeu6, #youtubeVid{
   display: none;
 }
 
+.entete{
+  width : 100%;
+  text-align: center;
+  font-size: 1.7em;
+}
 
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 #button {
     display: inline-block;
@@ -159,7 +187,7 @@ section .container:hover .txtImg h2{
 li a {
     color: white;
     font-weight: 300;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-decoration: none;
     background-color: rgb(32, 32, 32);
     padding-top: 3%;

@@ -27,12 +27,103 @@ function topFunction() {
 
 function highlightElem(){
   var leJeuSelect = document.querySelector(this.getAttribute("href"));
-  leJeuSelect.classList.add("animBorder");
-    setTimeout(
-      function() 
-      {
-        leJeuSelect.classList.remove("animBorder");
-      }, 3250);
+    if (leJeuSelect.getAttribute("id") == "JM"){
+      document.querySelector("#Jeu1").classList.add("animBorder");
+      setTimeout(
+        function() 
+        {
+          document.querySelector("#Jeu1").classList.remove("animBorder");
+        }, 3250);
+
+      setTimeout(
+        function() 
+        {
+          document.querySelector("#Jeu5").classList.add("animBorder");
+        }, 400);
+      setTimeout(
+        function() 
+        {
+          document.querySelector("#Jeu5").classList.remove("animBorder");
+        }, 3650);
+
+
+    }else if(leJeuSelect.getAttribute("id") == "JPC"){
+      
+
+      setTimeout(
+        function() 
+        {
+          document.querySelector("#Jeu2").classList.add("animBorder");
+        }, 200);
+
+      setTimeout(
+        function() 
+        {
+          document.querySelector("#Jeu2").classList.remove("animBorder");
+        }, 3450);
+
+      setTimeout(
+        function() 
+        {
+          document.querySelector("#Jeu3").classList.add("animBorder");
+        }, 600);
+      setTimeout(
+        function() 
+        {
+          document.querySelector("#Jeu3").classList.remove("animBorder");
+        }, 3850);
+
+      setTimeout(
+        function() 
+        {
+          document.querySelector("#Jeu6").classList.add("animBorder");
+        }, 1000);
+      setTimeout(
+        function() 
+        {
+          document.querySelector("#Jeu6").classList.remove("animBorder");
+        }, 4250);
+
+      setTimeout(
+        function() 
+        {
+          document.querySelector("#Jeu4").classList.add("animBorder");
+        }, 1400);
+      setTimeout(
+        function() 
+        {
+          document.querySelector("#Jeu4").classList.remove("animBorder");
+        }, 4650);
+
+
+    }else if (leJeuSelect.getAttribute("id") == "YTB"){
+
+      setTimeout(
+        function() 
+        {
+          document.querySelector("#youtubeVid").classList.add("animBorder");
+        }, 550);
+
+      setTimeout(
+        function() 
+        {
+          document.querySelector("#youtubeVid").classList.remove("animBorder");
+        }, 3800);
+
+
+    }else{
+      setTimeout(
+        function() 
+        {
+          document.querySelector("#footer").classList.add("animBorder");
+        }, 600);
+
+      setTimeout(
+        function() 
+        {
+          document.querySelector("#footer").classList.remove("animBorder");
+        }, 3850);
+    }
 }
 
 btn.addEventListener("click",topFunction);
@@ -77,7 +168,13 @@ $(document).ready(function(){
         setTimeout(
           function() 
           {
-            $('footer').fadeIn(1400);
+            $('#youtubeVid').fadeIn(1400);
           }, 2350);
+
+          setTimeout(
+            function() 
+            {
+              $('footer').fadeIn(1400);
+            }, 2800);
 
   });
